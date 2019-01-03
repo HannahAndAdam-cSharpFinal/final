@@ -28,13 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.castle = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // castle
+            // 
+            this.castle.Image = global::WindowsFormsApp1.Properties.Resources.castle;
+            this.castle.Location = new System.Drawing.Point(347, 214);
+            this.castle.Name = "castle";
+            this.castle.Size = new System.Drawing.Size(289, 295);
+            this.castle.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.grassBackground;
+            this.ClientSize = new System.Drawing.Size(1015, 811);
+            this.Controls.Add(this.castle);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label castle;
     }
 }
 
