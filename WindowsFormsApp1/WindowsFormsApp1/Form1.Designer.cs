@@ -29,15 +29,29 @@
         private void InitializeComponent()
         {
             this.castle = new System.Windows.Forms.Label();
+            this.openSpot1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // castle
             // 
+            this.castle.BackColor = System.Drawing.Color.Transparent;
             this.castle.Image = global::WindowsFormsApp1.Properties.Resources.castle;
-            this.castle.Location = new System.Drawing.Point(347, 214);
+            this.castle.Location = new System.Drawing.Point(359, 168);
             this.castle.Name = "castle";
             this.castle.Size = new System.Drawing.Size(289, 295);
             this.castle.TabIndex = 0;
+            // 
+            // openSpot1
+            // 
+            this.openSpot1.BackColor = System.Drawing.Color.Transparent;
+            this.openSpot1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.openSpot1.Image = global::WindowsFormsApp1.Properties.Resources.emptyPlot;
+            this.openSpot1.Location = new System.Drawing.Point(177, 117);
+            this.openSpot1.Name = "openSpot1";
+            this.openSpot1.Size = new System.Drawing.Size(176, 172);
+            this.openSpot1.TabIndex = 1;
+            this.openSpot1.UseVisualStyleBackColor = false;
+            this.openSpot1.Click += new System.EventHandler(this.openSpot1_Click);
             // 
             // Form1
             // 
@@ -45,6 +59,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.grassBackground;
             this.ClientSize = new System.Drawing.Size(1015, 811);
+            this.Controls.Add(this.openSpot1);
             this.Controls.Add(this.castle);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -55,6 +70,7 @@
         #endregion
 
         private System.Windows.Forms.Label castle;
+        private System.Windows.Forms.Button openSpot1;
     }
 }
 
