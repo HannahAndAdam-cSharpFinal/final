@@ -39,7 +39,7 @@
             this.goldMineBtn = new System.Windows.Forms.Button();
             this.foodBtn = new System.Windows.Forms.Button();
             this.goldMineChoice1Btn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.foodChoice1Btn = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.goldTxtBox = new System.Windows.Forms.TextBox();
             this.foodTxtBox = new System.Windows.Forms.TextBox();
@@ -160,15 +160,14 @@
             this.goldMineChoice1Btn.Visible = false;
             this.goldMineChoice1Btn.Click += new System.EventHandler(this.goldMineChoice1Btn_Click);
             // 
-            // button2
+            // foodChoice1Btn
             // 
-            this.button2.Location = new System.Drawing.Point(136, 142);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 85);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "button7";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Visible = false;
+            this.foodChoice1Btn.Location = new System.Drawing.Point(136, 142);
+            this.foodChoice1Btn.Name = "foodChoice1Btn";
+            this.foodChoice1Btn.Size = new System.Drawing.Size(91, 85);
+            this.foodChoice1Btn.TabIndex = 10;
+            this.foodChoice1Btn.UseVisualStyleBackColor = true;
+            this.foodChoice1Btn.Visible = false;
             // 
             // timer1
             // 
@@ -217,7 +216,7 @@
             this.Controls.Add(this.goldLbl);
             this.Controls.Add(this.foodTxtBox);
             this.Controls.Add(this.goldTxtBox);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.foodChoice1Btn);
             this.Controls.Add(this.goldMineChoice1Btn);
             this.Controls.Add(this.foodBtn);
             this.Controls.Add(this.goldMineBtn);
@@ -247,7 +246,7 @@
         private System.Windows.Forms.Button goldMineBtn;
         private System.Windows.Forms.Button foodBtn;
         private System.Windows.Forms.Button goldMineChoice1Btn;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button foodChoice1Btn;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox goldTxtBox;
         private System.Windows.Forms.TextBox foodTxtBox;
