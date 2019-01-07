@@ -13,13 +13,16 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        int score = 0;
+        int score = 500;
         public Form1()
         {
             InitializeComponent();
             timer1.Start();
-        }
 
+
+            
+        }
+        
         private void openSpot1_Click(object sender, EventArgs e)
         {
 
@@ -33,7 +36,7 @@ namespace WindowsFormsApp1
         private void goldMineBtn_Click(object sender, EventArgs e)
         {
             goldMineChoice1Btn.Visible = true;
-            button2.Visible = false;
+            foodChoice1Btn.Visible = false;
             goldMineBtn.Visible = false;
             foodBtn.Visible = false;
             openSpot1btn.Visible = false;
@@ -44,7 +47,7 @@ namespace WindowsFormsApp1
         private void foodBtn_Click(object sender, EventArgs e)
         {
             goldMineChoice1Btn.Visible = false;
-            button2.Visible = true;
+            foodChoice1Btn.Visible = true;
             goldMineBtn.Visible = false;
             foodBtn.Visible = false;
             openSpot1btn.Visible = false;
@@ -61,5 +64,6 @@ namespace WindowsFormsApp1
             score = score + 1;
             goldTxtBox.Text = score + " gold";
         }
+
     }
 }
