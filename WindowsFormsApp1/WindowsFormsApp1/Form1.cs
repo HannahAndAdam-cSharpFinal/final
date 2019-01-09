@@ -28,8 +28,20 @@ namespace WindowsFormsApp1
         //starting gold amount, 500.
         private void openSpot1_Click(object sender, EventArgs e)
         {
-            goldMineBtn.Visible = true;
-            foodBtn.Visible = true;    
+            if(gold <= 300)
+            {
+                goldMineBtn.Visible = true;
+            }
+            else if(gold <= 400)
+            {
+                foodBtn.Visible = true;
+            }
+            else
+            {
+                errorTxtBox.Visible = true;
+            }
+            
+                
         }
         //if the gold mine buton is chosen, it will make the gold mine button that accumulates appear and the others not visible
         private void goldMineBtn_Click(object sender, EventArgs e)
@@ -93,8 +105,9 @@ namespace WindowsFormsApp1
 
         private void goldMineChoice2Btn_Click(object sender, EventArgs e)
         {
-            
-            
+            gold = gold + 1;
+            goldTxtBox.Text = gold + " gold";
+
         }
     }
 }
