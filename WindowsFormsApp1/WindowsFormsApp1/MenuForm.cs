@@ -22,6 +22,7 @@ namespace WindowsFormsApp1
             Form1 openform = new Form1();
             openform.Show();
             Visible = false;
+
         }
     }
 }

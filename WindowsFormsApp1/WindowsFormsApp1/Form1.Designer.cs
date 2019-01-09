@@ -54,6 +54,7 @@
             this.foodChoice4Btn = new System.Windows.Forms.Button();
             this.foodChoice5Btn = new System.Windows.Forms.Button();
             this.foodChoice6Btn = new System.Windows.Forms.Button();
+            this.errorTxtBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // castle
@@ -87,6 +88,7 @@
             this.openSpot2btn.Size = new System.Drawing.Size(97, 92);
             this.openSpot2btn.TabIndex = 2;
             this.openSpot2btn.UseVisualStyleBackColor = false;
+            this.openSpot2btn.Click += new System.EventHandler(this.openSpot2btn_Click);
             // 
             // openSpot3btn
             // 
@@ -195,7 +197,7 @@
             this.goldTxtBox.Name = "goldTxtBox";
             this.goldTxtBox.Size = new System.Drawing.Size(184, 20);
             this.goldTxtBox.TabIndex = 11;
-            this.goldTxtBox.Text = "500";
+            this.goldTxtBox.Text = "500 gold";
             // 
             // foodTxtBox
             // 
@@ -219,13 +221,14 @@
             this.goldMineChoice2Btn.TabIndex = 13;
             this.goldMineChoice2Btn.UseVisualStyleBackColor = false;
             this.goldMineChoice2Btn.Visible = false;
+            this.goldMineChoice2Btn.Click += new System.EventHandler(this.goldMineChoice2Btn_Click);
             // 
             // foodChoice2Btn
             // 
             this.foodChoice2Btn.BackColor = System.Drawing.Color.ForestGreen;
             this.foodChoice2Btn.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.foodChoice;
             this.foodChoice2Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.foodChoice2Btn.Location = new System.Drawing.Point(136, 268);
+            this.foodChoice2Btn.Location = new System.Drawing.Point(139, 267);
             this.foodChoice2Btn.Name = "foodChoice2Btn";
             this.foodChoice2Btn.Size = new System.Drawing.Size(93, 90);
             this.foodChoice2Btn.TabIndex = 14;
@@ -328,12 +331,26 @@
             this.foodChoice6Btn.UseVisualStyleBackColor = false;
             this.foodChoice6Btn.Visible = false;
             // 
+            // errorTxtBox
+            // 
+            this.errorTxtBox.Location = new System.Drawing.Point(377, 266);
+            this.errorTxtBox.Margin = new System.Windows.Forms.Padding(10, 50, 10, 10);
+            this.errorTxtBox.MaximumSize = new System.Drawing.Size(400, 400);
+            this.errorTxtBox.Multiline = true;
+            this.errorTxtBox.Name = "errorTxtBox";
+            this.errorTxtBox.Size = new System.Drawing.Size(262, 31);
+            this.errorTxtBox.TabIndex = 23;
+            this.errorTxtBox.Text = "You do not have enough gold for this item!";
+            this.errorTxtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.errorTxtBox.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.grassBackground;
             this.ClientSize = new System.Drawing.Size(1015, 811);
+            this.Controls.Add(this.errorTxtBox);
             this.Controls.Add(this.foodChoice6Btn);
             this.Controls.Add(this.foodChoice5Btn);
             this.Controls.Add(this.foodChoice4Btn);
@@ -391,6 +408,7 @@
         private System.Windows.Forms.Button foodChoice4Btn;
         private System.Windows.Forms.Button foodChoice5Btn;
         private System.Windows.Forms.Button foodChoice6Btn;
+        private System.Windows.Forms.TextBox errorTxtBox;
     }
 }
 
