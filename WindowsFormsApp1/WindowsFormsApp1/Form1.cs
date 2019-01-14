@@ -23,12 +23,25 @@ namespace WindowsFormsApp1
             InitializeComponent();
             
         }
+        //This is all of the code for the first open spot and the choices
         //when one of the open spots are clicked, the users two options, gold or food, will then appear. Both have costs that will be deducted from their
         //starting gold amount, 500.
         private void openSpot1_Click(object sender, EventArgs e)
         {
-            goldMineBtn.Visible = true;
-            foodBtn.Visible = true;    
+            if(gold <= 300)
+            {
+                goldMineBtn.Visible = true;
+            }
+            else if(gold <= 400)
+            {
+                foodBtn.Visible = true;
+            }
+            else
+            {
+                errorTxtBox.Visible = true;
+            }
+            
+                
         }
         //if the gold mine buton is chosen, it will make the gold mine button that accumulates appear and the others not visible
         private void goldMineBtn_Click(object sender, EventArgs e)
@@ -79,6 +92,22 @@ namespace WindowsFormsApp1
             food1Timer.Start();
             food = food + 1;
             foodTxtBox.Text = food + " food";
+        }
+        //this is the end of the code for the first open spot and the users options
+
+
+        //this is the start for the second open spot and the users choices
+        private void openSpot2btn_Click(object sender, EventArgs e)
+        {
+            goldMineBtn.Visible = true;
+            foodBtn.Visible = true;
+        }
+
+        private void goldMineChoice2Btn_Click(object sender, EventArgs e)
+        {
+            gold = gold + 1;
+            goldTxtBox.Text = gold + " gold";
+
         }
     }
 }
