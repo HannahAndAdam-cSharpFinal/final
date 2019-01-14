@@ -4,6 +4,8 @@
     <h1>Civilization Game</h1>
       <h2>Hannah & Adam</h2>
 
+<a href="https://youtu.be/Ef6nPwwIR8I"> The Civ Game </a>
+
 <p>This civ game begins with your tolal gold beginning at 500 gold and food also beginning at 500 food.</p> 
 <p>To start the game press the "New Game" button.</p?
 <p>You are not allowed to build more than 14 buildings on the game board at a time. </p>
