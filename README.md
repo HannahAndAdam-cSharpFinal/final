@@ -9,3 +9,5 @@
 <p>The game will also remove pictures so that the user has to continuously interact with the game, watching the gold AND food to make sure they have an efficent amount at all times.</p> 
 <p>If you reach 0 Gold or 0 food the timer will be Disabled  and the totals will be red, and the Game will be Over. </p>
 
+<img src="Civ Game C#.png" height = "400" width ="400">
+
